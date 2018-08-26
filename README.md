@@ -1,25 +1,47 @@
-# ddf--ihme--global_burden_disease_etiology
+# Global Burden of Disease from IHME
 
-IHME GBD Etiology
+IHME GBD etiology by cause and risk
 
-## Indicators
+Source: [GBD 2016](http://ghdx.healthdata.org/gbd-2016). The source
+files are downloaded from [GBD result tool](http://ghdx.healthdata.org/gbd-results-tool)
 
-- List of indicators in this repo
+# Indicators in this dataset
 
-## Definition of indicator
+Below measures are available for the context "etiology" in GBD:
 
+- deaths
+- dalys
+- ylls
+- ylds
 
-## Unit of measurement
+And each measure is available in 3 units:
 
+- Number
+- Rate per 100K people
+- Percent
 
-## Versions
+We have combined these measures and metrics, and created following
+indicators in this dataset:
 
+- deaths_number
+- deaths_percent
+- deaths_rate
+- ylls_number
+- ylls_percent
+- ylls_rate
+- ylds_number
+- ylds_percent
+- ylds_rate
+- dalys_number
+- dalys_percent
+- dalys_rate
 
-### Revision history
+## Notes
 
-
-## Data sources summary
-
-
-## Specific information about this indicator
-
+1. uncertainty level upper bound and lower bound values are not
+   included in the dataset. Only median values are included.
+2. at most 2 decimal digits are kept for numbers.
+3. only country level data available; city/state/region/world level
+   data are not in the dataset
+4. only aggregated age groups "all age" and "age standardized" are
+   available
